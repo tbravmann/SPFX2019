@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "onprem19",
+    "version": "1.10.0",
+    "libraryName": "spfx-2019",
+    "libraryId": "0188155b-a454-4e83-b73a-8bb64762de84",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}
