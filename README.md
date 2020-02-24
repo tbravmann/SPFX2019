@@ -1,6 +1,12 @@
 ## spfx-2019
 
-This is where you include your WebPart documentation.
+SPFX WebPart for SharePoint 2019
+
+slight modifications and examples are included like :
+
+- Exchanged Office UI Fabric Core with Office UI Fabric React
+
+...
 
 ### Building the code
 
