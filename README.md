@@ -5,6 +5,8 @@ SPFX WebPart for SharePoint 2019
 slight modifications and examples are included like :
 
 - Exchanged Office UI Fabric Core with Office UI Fabric React
+- Added SPFX-React-Controls
+- Added People Picker from SPFX-React-Controls
 
 ...
 
