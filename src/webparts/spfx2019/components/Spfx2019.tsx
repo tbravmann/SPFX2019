@@ -5,6 +5,7 @@ import { escape } from '@microsoft/sp-lodash-subset';
 import {PeoplePicker, PrincipalType} from '@pnp/spfx-controls-react/lib/PeoplePicker';
 import {IPlaceholderCompProps} from './IPlaceholderCompProps';
 import {PlaceholderComp} from './PlaceholderComponent';
+import { PeoplePickerComp } from './PeoplePickerComp';
 
 
 export default class Spfx2019 extends React.Component < ISpfx2019Props, {} > {
@@ -27,7 +28,9 @@ export default class Spfx2019 extends React.Component < ISpfx2019Props, {} > {
         <a href='https://aka.ms/spfx' className={styles.button}>
           <span className={styles.label}>Learn more</span>
         </a>
-        <br></br>
+        <p>User : </p>
+        
+        <PeoplePickerComp context={this.props.context}/>
         <br></br>
         <PlaceholderComp context ={this.props.context}/>
       </div>
