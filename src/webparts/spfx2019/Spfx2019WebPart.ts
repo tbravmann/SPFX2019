@@ -16,6 +16,8 @@ import Spfx2019 from './components/Spfx2019';
 import { ISpfx2019Props } from './components/ISpfx2019Props';
 import styles from '../../../lib/webparts/spfx2019/components/Spfx2019.module.scss';
 
+import { Placeholder } from '@pnp/spfx-controls-react';
+
 
 export interface ISpfx2019WebPartProps {
   description: string;
@@ -43,9 +45,14 @@ export default class Spfx2019WebPart extends BaseClientSideWebPart<ISpfx2019WebP
         description: this.properties.description,
         test1 : this.properties.test1,
         context : this.context
-      }
-    );
-      this._renderListAsync();
+      },
+ 
+    )
+
+    
+
+
+    this._renderListAsync();
     ReactDom.render(element, this.domElement);
   }
 
