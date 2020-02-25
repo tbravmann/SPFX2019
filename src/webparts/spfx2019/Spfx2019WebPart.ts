@@ -15,7 +15,7 @@ import {SPHttpClient,SPHttpClientResponse} from '@microsoft/sp-http';
 import Spfx2019 from './components/Spfx2019';
 import { ISpfx2019Props } from './components/ISpfx2019Props';
 import styles from '../../../lib/webparts/spfx2019/components/Spfx2019.module.scss';
-
+import {IPlaceholderCompProps} from './components/IPlaceholderCompProps';
 import { Placeholder } from '@pnp/spfx-controls-react';
 
 

@@ -3,17 +3,13 @@ import styles from './Spfx2019.module.scss';
 import { ISpfx2019Props } from './ISpfx2019Props';
 import { escape } from '@microsoft/sp-lodash-subset';
 import {PeoplePicker, PrincipalType} from '@pnp/spfx-controls-react/lib/PeoplePicker';
-import { Placeholder } from '@pnp/spfx-controls-react';
+import {IPlaceholderCompProps} from './IPlaceholderCompProps';
+import {PlaceholderComp} from './PlaceholderComponent';
 
 
 export default class Spfx2019 extends React.Component < ISpfx2019Props, {} > {
   
-    constructor(props){
-      super(props);
-      this._onConfigure = this._onConfigure.bind(this);
-    }
-
-  
+    
   
   public render(): React.ReactElement<ISpfx2019Props> {
     return(
@@ -31,11 +27,9 @@ export default class Spfx2019 extends React.Component < ISpfx2019Props, {} > {
         <a href='https://aka.ms/spfx' className={styles.button}>
           <span className={styles.label}>Learn more</span>
         </a>
-        <Placeholder iconName='Edit'
-                   iconText='Configure your Web Part'
-                   description = 'Please configure the web Part'
-                   buttonLabel = 'Configure'
-                   onConfigure={this._onConfigure}/>
+        <br></br>
+        <br></br>
+        <PlaceholderComp context ={this.props.context}/>
       </div>
     </div>
      <div id="spListContainer" /> 
@@ -46,8 +40,4 @@ export default class Spfx2019 extends React.Component < ISpfx2019Props, {} > {
       
   }
 
-  private _onConfigure(){
-
-    this.props.context.propertyPane.open();
-  }
 }
