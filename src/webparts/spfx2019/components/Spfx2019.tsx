@@ -6,6 +6,7 @@ import {PeoplePicker, PrincipalType} from '@pnp/spfx-controls-react/lib/PeoplePi
 import {IPlaceholderCompProps} from './IPlaceholderCompProps';
 import {PlaceholderComp} from './PlaceholderComponent';
 import { PeoplePickerComp } from './PeoplePickerComp';
+import { ButtonRowComp } from '../../../../lib/webparts/spfx2019/components/ButtonRowComp';
 
 
 export default class Spfx2019 extends React.Component < ISpfx2019Props, {} > {
@@ -28,14 +29,19 @@ export default class Spfx2019 extends React.Component < ISpfx2019Props, {} > {
         <a href='https://aka.ms/spfx' className={styles.button}>
           <span className={styles.label}>Learn more</span>
         </a>
+        <a />
+        <div className="ms-Grid">
+        
+        </div>
         <p>User : </p>
         
         <PeoplePickerComp context={this.props.context}/>
         <br></br>
-        <PlaceholderComp context ={this.props.context}/>
+        <ButtonRowComp />
+        {/* <PlaceholderComp context ={this.props.context}/> */}
       </div>
     </div>
-     <div id="spListContainer" /> 
+     {/* <div id="spListContainer" />  */}
   </div>
       </div >
     );

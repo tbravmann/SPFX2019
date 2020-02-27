@@ -14,8 +14,11 @@ export class ButtonRowComp extends React.Component<IButtonRowCompProps,{}>{
         return(
 
             <div>
-                <DefaultButton text="Apply" onClick={this._alertClicked} allowDisabledFocus disabled={this.props.disabled} checked={this.props.checked} />
-                <PrimaryButton text="Discard" onClick={this._alertClicked} allowDisabledFocus disabled={this.props.disabled} checked={this.props.disabled} />
+
+                <PrimaryButton text="Apply" onClick={this._alertClicked} disabled={this.props.disabled} checked={this.props.disabled} />      
+                
+                
+                <PrimaryButton text="Discard" onClick={this._alertClicked} disabled={this.props.disabled} checked={this.props.disabled} />
                 
             </div>
 
