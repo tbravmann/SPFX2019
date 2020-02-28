@@ -8,6 +8,13 @@ export interface IButtonRowCompProps {
     checked?:boolean;
 }
 
+const ButtonRowStyles =  {
+  root : { 
+      margin:'2%' ,
+         
+            }
+    
+  }
 
 export class ButtonRowComp extends React.Component<IButtonRowCompProps,{}>{
  
@@ -16,10 +23,10 @@ export class ButtonRowComp extends React.Component<IButtonRowCompProps,{}>{
 
             <div className = {styles.buttonbox}>
                    
-                <PrimaryButton text="Apply" onClick={this._alertClicked} disabled={this.props.disabled} checked={this.props.disabled} />      
+                <PrimaryButton styles={ButtonRowStyles} className={styles.button} text="Apply" onClick={this._alertClicked} disabled={this.props.disabled} checked={this.props.disabled} />      
                
                 
-                <PrimaryButton text="Discard" onClick={this._alertClicked} disabled={this.props.disabled} checked={this.props.disabled} />
+                <PrimaryButton styles={ButtonRowStyles} className={styles.button} text="Discard" onClick={this._alertClicked} disabled={this.props.disabled} checked={this.props.disabled} />
                
                 
                 
@@ -34,3 +41,4 @@ export class ButtonRowComp extends React.Component<IButtonRowCompProps,{}>{
     }
 
 } 
+
