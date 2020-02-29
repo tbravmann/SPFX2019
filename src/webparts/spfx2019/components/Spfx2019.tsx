@@ -7,7 +7,7 @@ import {IPlaceholderCompProps} from './IPlaceholderCompProps';
 import {PlaceholderComp} from './PlaceholderComponent';
 import { PeoplePickerComp } from './PeoplePickerComp';
 import { ButtonRowComp } from '../../../../lib/webparts/spfx2019/components/ButtonRowComp';
-
+import {DropdownComponent} from './DropdownComponent';
 
 export default class Spfx2019 extends React.Component < ISpfx2019Props, {} > {
   
@@ -31,7 +31,7 @@ export default class Spfx2019 extends React.Component < ISpfx2019Props, {} > {
         </a>
         <a />
         <div className="ms-Grid">
-        
+        <DropdownComponent />
         </div>
         <p>User : </p>
         
