@@ -19,19 +19,17 @@ export default class Spfx2019 extends React.Component < ISpfx2019Props, {} > {
   <div className={styles.container}>
     <div className={styles.row}>
       <div className={styles.column}>
-        <span className={styles.title}>Das ist ein WebPart mit zwei Custom Werten!</span>
-        <p className={styles.subTitle}>gerne eingesetzt zu Demozwecken ! </p>
-        <p className={styles.description}>{escape(this.props.description)}</p>
-        <p className={styles.description}>{escape(this.props.test1)}</p>
+        <span className={styles.title}>User Management WebPart</span>
+   
+   
+    {/*     
         <p className={styles.description}>Loading from : {escape(this.props.context.pageContext.web.title)}</p>
-
-                
-        <a href='https://aka.ms/spfx' className={styles.button}>
-          <span className={styles.label}>Learn more</span>
-        </a>
-        <a />
+    */}
+   
+   
         <div className="ms-Grid">
-        <DropdownComponent />
+        <p>Bitte wählen Sie eine Gruppe aus : </p>
+        <DropdownComponent/>
         </div>
         <p>User : </p>
         

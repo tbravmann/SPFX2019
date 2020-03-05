@@ -1,15 +1,9 @@
 import * as React from  'react';
-import {Dropdown, IDropdownOption,DropdownMenuItemType} from 'office-ui-fabric-react/lib/Dropdown';
+import {Dropdown, IDropdownOption,DropdownMenuItemType, } from 'office-ui-fabric-react/lib/Dropdown';
 import styles from '../../../../lib/webparts/spfx2019/components/Spfx2019.module.scss';
 
 export interface IDropdownComponentProps{
 
-}
-
-const DropdownStyles = {
-    root : {
-        color:'white'
-    }
 }
 
 
@@ -31,8 +25,10 @@ export class DropdownComponent extends React.Component<IDropdownComponentProps,{
     render(){
         return(
             <div>
-                <Dropdown style= {DropdownStyles} placeHolder='Verfügbare Gruppen' label='Bitte wählen Sie eine Gruppe aus : ' options = {options}  /> 
+                <Dropdown placeHolder='Verfügbare Gruppen'  options = {options}  /> 
             </div>
         )
     };
 };
+
+
